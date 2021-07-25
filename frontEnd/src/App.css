@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'moderna';
+  src: url('./fonts/Moderna.woff2') format('woff2'),
+      url('./fonts/Moderna.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/***********************************************/
+
+.parent {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.header {
+  background-color: #f3f1f1;
+  display: flex;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  position: sticky;
+}
+.header img {
+  margin: auto;
+}
+
+.bodyContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/****************************************/
+
+.wrapper {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+#notFound {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: ease 0.3s;
+}
+
+#logo {
+  transition: ease 0.3s;
+}
+
+#fourOFour {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #EC5D79;
+  font-size: 15em;
+  vertical-align: middle;
+  transition: ease 0.3s;
+}
+
+#errorMsg {
+  font-family: "Moderna";
+  letter-spacing: 0.1rem;
+  font-size: 2.5em;
+  transition: ease 0.3s;
+}
+
+/****************************************/
+
+@media only screen and (max-width: 600px) {
+  #fourOFour {
+    font-size: 8em;
+  }
+
+  #logo {
+    height: 100px;
+  }
+
+  #errorMsg {
+    font-size: 1.8em;
+  }
+}

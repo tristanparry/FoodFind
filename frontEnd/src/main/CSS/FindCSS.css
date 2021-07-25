@@ -1,0 +1,39 @@
+.popup .mapboxgl-popup-content {
+    background-color: #fca5b6;
+    padding: 2em;
+    border-radius: 8px;
+}
+.popup .mapboxgl-popup-tip {
+    border-top-color: #fca5b6;
+}
+.popup div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.popupName {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.popupAddress {
+    font-family: sans-serif;
+}
+
+.saveButton {
+    margin: auto;
+    margin-top: 1em;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-family: "Moderna";
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+.saveButton:hover {
+    background-color: rgb(216, 216, 216);
+    transform: scale(95%);
+}

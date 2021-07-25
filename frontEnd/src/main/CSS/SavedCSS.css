@@ -1,0 +1,93 @@
+.savedRestaurants {
+    max-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5em;
+    overflow-y: scroll; 
+}
+.savedRestaurants::-webkit-scrollbar {
+    width: 0.6em;
+    background-color: rgb(221, 221, 221);
+}
+.savedRestaurants::-webkit-scrollbar-thumb {
+  background-color: #EC5D79;
+  border-radius: 20px;
+}
+
+/*****************************************/
+
+.row {
+    margin: auto;
+    width: 80%;
+    max-width: 900px;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #EC5D79;
+    align-items: center;
+    transition: ease 0.2s;
+}
+.row:hover {
+    transform: scale(103%);
+    background-color: rgba(236, 93, 122, 0.062);
+}
+.row:hover button {
+    opacity: 1;
+}
+
+.row #logo {
+    margin-right: 1.5em;
+}
+
+.row button {
+    margin-left: auto;
+    opacity: 0;
+    transition: ease 0.2s;
+}
+.row button:hover {
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+#name {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.3em;
+    color: #EC5D79;
+    transition: ease 0.3s;
+}
+
+#address {
+    font-size: 0.95em;
+    color: #141414;
+    transition: ease 0.3s;
+}
+
+#hearts {
+    background-image: url("../../SVG/repeated_hearts_background.svg");
+    background-size: cover;
+    width: 100%;
+    height: 45em;
+    margin-top: 1em;
+    opacity: 25%;
+}
+
+/*****************************************/
+
+@media only screen and (min-width: 800px) {
+    #name {
+        font-size: 1.4em;
+    }
+    
+    #address {
+        font-size: 1.1em;
+        color: #141414;
+    }
+}

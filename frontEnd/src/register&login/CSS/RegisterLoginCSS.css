@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'moderna';
+    src: url('../../fonts/Moderna.woff2') format('woff2'),
+        url('../../fonts/Moderna.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/***********************************************/
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
+
+.header {
+    border-bottom: 3px solid #EC5D79;
+}
+
+#usernameRow, #passwordRow, #bottomRow {
+    margin: auto;
+    padding-top: 3em;
+}
+#usernameRow {
+    margin-top: 2.5em;
+}
+
+.textBox {
+    font-family: "Moderna";
+    color: #EC5D79;
+    font-size: 1.8em;
+    margin-right: 1em;
+    vertical-align: middle;
+    transition: ease 0.3s;
+}
+#passwordRow .textBox {
+    letter-spacing: 0.03rem;
+    transition: ease 0.3s;
+}
+
+.inputBox {
+    width: 60vw;
+    max-width: 600px;
+    height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    color: #141414;
+    border: 2px solid #50505044;
+    border-radius: 0.65em;
+    outline: none;
+    transition: ease 0.3s;
+}
+.inputBox:hover {
+    border-color: rgba(209, 66, 95, 0.822);
+    background-color: rgba(236, 93, 122, 0.062);
+}
+
+.loginText {
+    font-family: sans-serif;
+    margin-right: 1em;
+    vertical-align: middle;
+    transition: ease 0.3s;
+}
+#bottomRow a {
+    color: #141414;
+}
+#bottomRow a:hover {
+    color: #EC5D79;
+}
+
+#bottomRow button {
+    background-color: #EC5D79;
+    color: white;
+    font-family: "Moderna";
+    font-size: medium;
+    border: none;
+    width: 20vw;
+    max-width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+#bottomRow button:hover {
+    background-color: rgb(219, 68, 98);
+}
+#bottomRow button:disabled {
+    background-color: rgb(179, 179, 179);
+    cursor: auto;
+}
+
+#error {
+    color: red;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    margin-top: 1em;
+}
+
+.decoration {
+    background-size: cover;
+    height: 45em;
+    margin-top: 7em;
+    opacity: 20%;
+}
+
+/***********************************************/
+
+@media only screen and (max-width: 600px) {
+    #usernameRow, #passwordRow, #bottomRow {
+        padding-top: 2em;
+    }
+    
+    .textBox {
+        font-size: 1.4em;
+    }
+
+    .inputBox {
+        font-size: 1em;
+    }
+}

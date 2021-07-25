@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'moderna';
+    src: url('../../fonts/Moderna.woff2') format('woff2'),
+        url('../../fonts/Moderna.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/***********************************************/
+
+.logoTop {
+    background-color: #f3f1f1;
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: sticky;
+}
+.logoTop a {
+    margin: auto;
+}
+.logoTop img {
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+.logoTop img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+.navBar {
+    background-color: #f3f1f1;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    border-bottom: 3px solid #EC5D79;
+}
+.navBar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    max-width: 1500px;
+}
+.navBar li {
+    display: inline-block;
+    transition: ease 0.3s;
+    font-family: "Moderna";
+    font-size: 1.1em;
+    vertical-align: middle;
+}
+.navBar a {
+    text-decoration: none;
+    color: #141414;
+    transition: ease 0.3s;
+}
+.navBar a:hover {
+    color: #EC5D79;
+    letter-spacing: 0.1rem;
+}
