@@ -14,7 +14,7 @@ A MERN Stack app that finds nearby restaurants, and allows for user restaurant s
 > ![image](https://user-images.githubusercontent.com/64918749/126884723-ba6d05c0-f856-4c90-89c3-557de5aa22ab.png)
 > 
 > Currently being hosted as a Heroku app:
-> https://foodfindapplication.herokuapp.com/
+> https://foodfindapplication.herokuapp.com
 >
 ----------------------------------------------------------------------------------------------------------------------------------
 
