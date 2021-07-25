@@ -9,13 +9,13 @@ export default function SavedRow(props) {
 
     // RENDER THE ROW
     return (
-        <div className="row">
+        <div className="row" onClick={restaurantDelete} style={{ cursor: "pointer" }}>
             <img src={logo} alt="" height="60px" id="logo" />
             <div className="info">
                 <span id="name">{restaurantName}</span>
                 <span id="address">{restaurantAddress}</span>
             </div>
-            <button style={{ border: "none", background: "none" }} onClick={restaurantDelete}><img src={trash} alt="Delete" height="30px" /></button>
+            <button style={{ border: "none", background: "none" }}><img src={trash} alt="Delete" height="30px" /></button>
         </div>
     );
 }
