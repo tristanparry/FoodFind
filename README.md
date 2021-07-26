@@ -1,3 +1,4 @@
+![foodfind](https://user-images.githubusercontent.com/64918749/126927969-85249f1c-507e-45c0-a955-6ac48a8d2d65.png)
 # FoodFind
 A MERN Stack app that finds nearby restaurants, and allows for user restaurant saving.
 
