@@ -10,7 +10,7 @@ export default function Saved(props) {
     return (
         <>
             <div className="savedRestaurants">
-                {savedArray.map(restaurant => <SavedRow key={restaurant.name + restaurant.address} restaurantName={restaurant.name} restaurantAddress={restaurant.address}
+                {savedArray.map((restaurant, idx) => <SavedRow key={idx} restaurantName={restaurant.name} restaurantAddress={restaurant.address}
                 // Map over the savedArray of restaurants, returning a SavedRow component for each one
                 restaurantDelete={e => {
                     e.target.closest(".row").remove(); // Remove the SavedRow from the view
